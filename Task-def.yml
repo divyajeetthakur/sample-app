@@ -1,0 +1,16 @@
+version: "2"
+services:
+  web:
+    image:ems-app-ashup-dev:GIT_COMMIT_BUILD_NUMBER
+    ports:
+      - "0:8080"
+    environment:
+     - DRIVERCLASSNAME="com.mysql.jdbc.Driver"
+     - DATABASEURL="jdbc:mysql://ems-app.clbdj44v7c4x.us-east-1.rds.amazonaws.com:3306/app"
+     - DBUSERNAME="app"
+     - DBPASSWORD="password"
+     - DIALECT="org.hibernate.dialect.MySQLDialect"
+     
+     
+     
+     
