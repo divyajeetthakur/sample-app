@@ -9,3 +9,5 @@ COPY httpd-foreground /usr/local/bin/
 EXPOSE 80
 #CMD ["httpd-foreground"]
 CMD ["/usr/sbin/apachectl","-DFOREGROUND"]
+
+# COMMENT 1
